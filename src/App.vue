@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <InfoCard v-for="n in 10" :key="n"/>
   </div>
 </template>
 
 <script>
+// export default {
+//  name: 'App',
+// };
+
+import InfoCard from './components/InfoCard/InfoCard.vue';
+
 export default {
-  name: 'App',
+  name: 'app',
+  components: {
+    InfoCard,
+  },
 };
 </script>
 
