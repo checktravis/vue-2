@@ -1,5 +1,6 @@
 <template>
   <div class="infocard">
+    <p>{{ n }}</p>
     <input v-model="firstname" placeholder="First Name">
     <input v-model="lastname" placeholder="Last Name">
     <p>First: {{ firstname }}</p>

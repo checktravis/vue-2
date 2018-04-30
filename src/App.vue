@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <valid-form v-for="n in 3" :key="n"/>
+    <InfoCard v-for="n in 100" :key="n" :n="n"/>
   </div>
 </template>
 
@@ -9,13 +9,14 @@
 //  name: 'App',
 // };
 
-// import InfoCard from './components/InfoCard/InfoCard.vue';
-import validForm from './components/valid-form/valid-form.vue';
+import InfoCard from './components/InfoCard/InfoCard.vue';
+// import validForm from './components/valid-form/valid-form.vue';
 
 export default {
   name: 'app',
   components: {
-    validForm,
+    // validForm,
+    InfoCard,
   },
 };
 </script>

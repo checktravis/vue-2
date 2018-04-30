@@ -4,12 +4,12 @@ export default {
     return {
       firstname: '',
       lastname: '',
-      errors:[],
+      errors: [],
     };
   },
-  methods:{
-    checkForm:function(e) {
-      this.errors.push("Name required.")
+  methods: {
+    checkForm(e) {
+      this.errors.push('Name required.');
       /*
       if(this.name && this.age) return true;
       this.errors = [];
@@ -17,7 +17,7 @@ export default {
       if(!this.age) this.errors.push("Age required.");
       e.preventDefault();
       */
-      return e
-    }
-  }
+      return e;
+    },
+  },
 };
